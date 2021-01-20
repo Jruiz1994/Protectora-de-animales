@@ -10,7 +10,7 @@ body {
 
 /*--------------EMPIEZAN ESTILOS DEL HEADER----------------*/
 header {
-  background-image: url("../imagenes/banner.jpg");
+  background-image: url("../imagenes/headerYLogo/banner.jpg");
   background-size: cover;
   width: 100%;
   height: 500px; }
@@ -100,7 +100,7 @@ h2 {
 
 /*--------------------Empiezan estilos de adopciones-------------------*/
 .adopciones {
-  background-image: url(../imagenes/perroAmor.png);
+  background-image: url(../imagenes/sliderAdopciones/perroAmor.png);
   background-size: cover;
   height: 480px; }
 
@@ -115,13 +115,21 @@ h2 {
 .carousel-caption-dark p {
   color: #000000;
   font-weight: bolder;
-  font-size: 20px; }
+  font-size: 15px;
+  margin-bottom: 0;
+  padding-bottom: 0; }
 
 .carousel-caption-light h3,
 .carousel-caption-light p {
   color: #FFFFFF;
   font-weight: bolder;
-  font-size: 20px; }
+  font-size: 15px;
+  margin-bottom: 0;
+  padding-bottom: 0; }
+
+.carousel-caption {
+  margin: 0;
+  padding: 0; }
 
 .carouselAdopciones {
   margin: 50px auto;

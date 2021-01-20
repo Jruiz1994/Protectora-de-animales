@@ -28,7 +28,7 @@ body {
 
 /*--------------EMPIEZAN ESTILOS DEL HEADER----------------*/
 header {
-    background-image: url("../imagenes/banner.jpg");
+    background-image: url("../imagenes/headerYLogo/banner.jpg");
     background-size: cover;
     @include sizes(100%);
     @include heights(500px);
@@ -143,13 +143,13 @@ h2 {
 }
 
 .contenedorEquipo {
-    margin:20px auto;
+    margin: 20px auto;
 }
 
 
 /*--------------------Empiezan estilos de adopciones-------------------*/
 .adopciones {
-    background-image: url(../imagenes/perroAmor.png);
+    background-image: url(../imagenes/sliderAdopciones/perroAmor.png);
     background-size: cover;
     @include heights(480px);
 }
@@ -160,7 +160,7 @@ h2 {
 
 .adoption {
     padding-top: 150px;
-    margin-left:30px;
+    margin-left: 30px;
 }
 
 
@@ -168,14 +168,24 @@ h2 {
 .carousel-caption-dark p {
     color: #000000;
     font-weight: bolder;
-    font-size: 20px;
+    font-size: 15px;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
 .carousel-caption-light h3,
 .carousel-caption-light p {
     color: $colorBlanco;
     font-weight: bolder;
-    font-size: 20px;
+    font-size: 15px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.carousel-caption {
+    // background-color: #B3AAAA;
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -199,7 +209,7 @@ select.form-select {
 
 /*--------------------Terminan estilos de adopciones-------------------*/
 #accordion {
-    margin-top:50px;
+    margin-top: 50px;
 }
 
 a.card-link {
@@ -213,13 +223,12 @@ a.card-link {
 
 /*-----------------INICIO FOOTER-----------------*/
 
-$redes: (
-    facebook: #3F2AC2,
-    instagram: #F8208B,
-    twitter: #44D3F7
-);
+$redes: (facebook: #3F2AC2,
+instagram: #F8208B,
+twitter: #44D3F7);
 
-@each $red,$color in $redes {
+@each $red,
+$color in $redes {
     .#{$red}:hover {
         background-color: $color;
     }
@@ -328,7 +337,8 @@ input[type=submit],
 }
 
 .botonSalvarVida {
-    margin: 0 auto;}
+    margin: 0 auto;
+}
 
 
 .informacionFooter__link:hover {
