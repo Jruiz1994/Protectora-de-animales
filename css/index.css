@@ -1,0 +1,406 @@
+/*VARIABLES*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Raleway', sans-serif;
+  background-color: #e1f4f3; }
+
+/*--------------EMPIEZAN ESTILOS DEL HEADER----------------*/
+header {
+  background-image: url("../imagenes/banner.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 500px; }
+
+.headerMenu {
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+
+.bg-light {
+  background-color: transparent !important; }
+
+a.nav-link {
+  color: #FFFFFF !important; }
+
+a.nav-link:hover {
+  color: #FF7000 !important; }
+
+/*--------------TERMINAN ESTILOS DEL HEADER----------------*/
+h1 {
+  color: #FFFFFF;
+  font-size: 60PX;
+  margin-left: 80px; }
+
+h2 {
+  color: #333333;
+  margin: 50px auto auto 80px;
+  font-weight: bolder;
+  font-size: 40px;
+  animation-duration: 2s;
+  animation-name: aparecer; }
+
+@keyframes aparecer {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+h3 {
+  font-size: 23px;
+  padding-bottom: 8px; }
+
+li a {
+  color: #FFFFFF;
+  font-weight: normal;
+  font-size: x-large; }
+
+#linkAdopciones {
+  color: #333333; }
+
+.ol__li {
+  color: #333333;
+  font-weight: bold;
+  padding-left: 80px;
+  padding-right: 80px;
+  list-style-position: inside;
+  line-height: 25px;
+  list-style-type: disc; }
+
+.texto {
+  padding: 30px 60px 30px 60px;
+  text-align: justify; }
+
+h2 {
+  text-align: center; }
+
+.encabezadoQueHacemos1,
+.encabezadoQueHacemos2,
+.encabezadoQueHacemos3 {
+  margin-top: 20px; }
+
+.imagenQueHacemos1,
+.imagenQueHacemos2,
+.imagenQueHacemos3 {
+  width: 300px; }
+
+.nombreEquipo {
+  font-weight: bold; }
+
+.col {
+  width: 330px; }
+
+.contenedorEquipo {
+  margin: 20px auto; }
+
+/*--------------------Empiezan estilos de adopciones-------------------*/
+.adopciones {
+  background-image: url(../imagenes/perroAmor.png);
+  background-size: cover;
+  height: 480px; }
+
+.adopciones__adopcionesForm {
+  padding-left: 100px; }
+
+.adoption {
+  padding-top: 150px;
+  margin-left: 30px; }
+
+.carousel-caption-dark h3,
+.carousel-caption-dark p {
+  color: #000000;
+  font-weight: bolder;
+  font-size: 20px; }
+
+.carousel-caption-light h3,
+.carousel-caption-light p {
+  color: #FFFFFF;
+  font-weight: bolder;
+  font-size: 20px; }
+
+.carouselAdopciones {
+  margin: 50px auto;
+  width: 60%; }
+
+select.form-select {
+  width: 300px; }
+
+#botonAdopciones, #tituloFormAdopciones {
+  margin-top: 15px; }
+
+/*--------------------Terminan estilos de adopciones-------------------*/
+#accordion {
+  margin-top: 50px; }
+
+a.card-link {
+  color: #FF7000;
+  font-weight: bold; }
+
+#faqs {
+  list-style-position: inside; }
+
+/*-----------------INICIO FOOTER-----------------*/
+.facebook:hover {
+  background-color: #3F2AC2; }
+
+.instagram:hover {
+  background-color: #F8208B; }
+
+.twitter:hover {
+  background-color: #44D3F7; }
+
+footer {
+  background-image: radial-gradient(#D6D4D4, #7C7878);
+  height: 350px; }
+
+.redesLogo {
+  width: 50px;
+  transition: all 1s; }
+
+.redesLogo:hover {
+  width: 70px; }
+
+.redes {
+  display: inline-block;
+  margin: auto 5px;
+  overflow: hidden; }
+
+form legend {
+  font-weight: bold;
+  font-size: larger; }
+
+input[type=submit],
+[type=reset] {
+  padding: 10px;
+  background-color: #F4F4F4;
+  border-radius: 15px;
+  font-weight: bold; }
+
+.textoFormulario {
+  font-weight: bold;
+  padding-bottom: 20px; }
+
+.gridFooter {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 120px 120px 100px;
+  grid-column-gap: 10px;
+  grid-template-areas: "logoRefugio formulario suscripcion" "logoRefugio formulario links" "redes formulario links";
+  justify-items: center;
+  align-content: end; }
+
+.footer__logoRefugio {
+  grid-area: logoRefugio;
+  width: 180px;
+  padding-top: 30px; }
+
+.social {
+  grid-area: redes;
+  align-self: center; }
+
+.formContacto {
+  grid-area: formulario; }
+
+.formSuscripcion {
+  grid-area: suscripcion;
+  align-self: start; }
+
+.informacionFooter {
+  grid-area: links; }
+
+.informacionFooter__titulo {
+  font-size: 22px;
+  font-weight: bold; }
+
+.informacionFooter__lista {
+  list-style: none; }
+
+.informacionFooter__link, .salvarVida {
+  font-size: 18px;
+  color: black;
+  font-weight: bold; }
+
+.salvarVida {
+  font-size: 45px; }
+
+.salvarVida:hover {
+  color: black !important; }
+
+.botonSalvarVida {
+  margin: 0 auto; }
+
+.informacionFooter__link:hover, .salvarVida:hover {
+  color: #FF7000; }
+
+button.btn.btn-primary {
+  background-color: #F49D59;
+  border-color: #FF7000; }
+
+button.btn.btn-primary:hover {
+  background-color: #FF7000; }
+
+.form-check-input:checked {
+  background-color: #FF7000; }
+
+/*--------------FIN-FOOTER----------------*/
+@media (min-width: 993px) {
+  /*TAMANIO GRANDE*/
+  h1 {
+    margin-top: 20px; }
+  .logoHeader {
+    width: 180px;
+    transition: width 1s; }
+  .logoHeader:hover {
+    width: 200px; }
+  div.logoHeaderAnimacion {
+    width: 220px;
+    height: 220px; }
+  /*empieza seccion de texto en columnas de pagina de inicio*/
+  .queHacemos {
+    margin: 30px 30px 50px 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 75px 240px 400px 140px;
+    grid-column-gap: 25px;
+    grid-template-areas: "h3a h3b h3c" "parrafoQueHacemos1 parrafoQueHacemos2 parrafoQueHacemos3" "imagenQueHacemos1 imagenQueHacemos2 imagenQueHacemos3" "botonSalvarVida botonSalvarVida botonSalvarVida";
+    justify-items: center; }
+  .encabezadoQueHacemos1 {
+    grid-area: h3a; }
+  .encabezadoQueHacemos2 {
+    grid-area: h3b; }
+  .encabezadoQueHacemos3 {
+    grid-area: h3c; }
+  .parrafoQueHacemos1 {
+    grid-area: parrafoQueHacemos1; }
+  .parrafoQueHacemos2 {
+    grid-area: parrafoQueHacemos2; }
+  .parrafoQueHacemos3 {
+    grid-area: parrafoQueHacemos3; }
+  .imagenQueHacemos1 {
+    width: 340px;
+    grid-area: imagenQueHacemos1; }
+  .imagenQueHacemos2 {
+    width: 340px;
+    grid-area: imagenQueHacemos2; }
+  .imagenQueHacemos3 {
+    width: 340px;
+    grid-area: imagenQueHacemos3; }
+  .botonSalvarVida {
+    grid-area: botonSalvarVida;
+    margin-top: 40px;
+    width: 400px; }
+  /*termina seccion de texto en columnas de pagina de inicio*/
+  /*-----------------Empiezan estilos de donaciones-----------------*/
+  .donaciones {
+    margin: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 650px;
+    grid-column-gap: 25px;
+    grid-template-areas: "sliderDonaciones sliderDonaciones formDonaciones";
+    align-items: center; }
+  .donaciones__sliderDonaciones {
+    grid-area: sliderDonaciones; }
+  .donaciones__formDonaciones {
+    grid-area: formDonaciones; }
+  .boton:hover {
+    background-color: #FF7000; }
+  /*-----------------Terminan estilos de donaciones-----------------*/
+  input#nombreAdopcion,
+  input#apellidoAdopcion,
+  input#emailAdopcion,
+  input#telefonoAdopcion,
+  input#selectAdopcion {
+    width: 300px; } }
+
+@media (max-width: 992px) and (min-width: 577px) {
+  /*TAMANIO MEDIANO*/
+  .logoHeader {
+    width: 150px; }
+  .logoHeader:hover {
+    width: 150px; }
+  div.logoHeaderAnimacion {
+    width: 170px;
+    height: 170px; }
+  .navbar-light .navbar-toggler {
+    background-color: #FF7000; }
+  .bg-light {
+    margin-top: 30px; }
+  h1 {
+    font-size: 50px; }
+  .headerMenu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 200px 300px;
+    grid-template-areas: "logo menu" "titulo menu";
+    justify-items: center;
+    align-items: center; }
+  .logoHeader {
+    grid-area: logo; }
+  .header__headerMenu {
+    grid-area: menu; }
+  .titulo {
+    grid-area: titulo; }
+  .gridFooter {
+    grid-column-gap: 15px; } }
+
+@media (max-width: 576px) {
+  /*TAMANIO CHICO*/
+  .redesLogo {
+    width: 30px; }
+  .redesLogo:hover {
+    width: 30px; }
+  .social {
+    width: 100%; }
+  .redes {
+    margin: auto 2px; }
+  footer {
+    margin: 30px auto 10px auto;
+    height: 450px; }
+  .footer__logoRefugio {
+    width: 150px; }
+  ul li a {
+    font-size: 20px; }
+  .logoHeader {
+    width: 110px;
+    margin: 20px; }
+  .logoHeader:hover {
+    width: 110px; }
+  div.logoHeaderAnimacion {
+    width: 130px;
+    height: 130px; }
+  h1 {
+    font-size: 25px;
+    margin: 20px; }
+  header {
+    height: 200px; }
+  .headerMenu {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px;
+    grid-template-areas: "logoHeader titulo menuMobile";
+    justify-items: center;
+    align-items: flex-start; }
+  .logoHeaderAnimacion {
+    grid-area: logoHeader; }
+  .titulo {
+    grid-area: titulo; }
+  .header__menuMobile {
+    grid-area: menuMobile; }
+  #dropdownMenu2 {
+    margin: 20px;
+    color: #FF7000; }
+  button a {
+    color: #FF7000; }
+  button a:hover {
+    color: #FF7000; }
+  .dropdown-item {
+    padding-left: 2px; }
+  .ol__li {
+    padding-left: 15px;
+    padding-right: 15px; } }
