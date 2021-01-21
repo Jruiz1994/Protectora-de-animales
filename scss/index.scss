@@ -10,11 +10,6 @@ $colorBlanco: #FFFFFF;
     height: $alto;
 }
 
-// @mixin margins($top, $right, $bottom, $left) {
-//     margin: $top $right $bottom $left;
-// }
-
-
 * {
     margin: 0;
     padding: 0;
@@ -484,6 +479,10 @@ button.btn.btn-primary:hover {
 
     /*TAMANIO MEDIANO*/
 
+    .queHacemos{
+        margin: auto 15px auto 15px;
+    }
+
     .logoHeader {
         @include sizes(150px);
     }
@@ -543,6 +542,11 @@ button.btn.btn-primary:hover {
 @media (max-width: 576px) {
 
     /*TAMANIO CHICO*/
+
+    .queHacemos{
+        margin: auto 10px auto 10px;
+    }
+
     .redesLogo {
         @include sizes(30px);
     }

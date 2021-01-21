@@ -332,6 +332,8 @@ button.btn.btn-primary:hover {
 
 @media (max-width: 992px) and (min-width: 577px) {
   /*TAMANIO MEDIANO*/
+  .queHacemos {
+    margin: auto 15px auto 15px; }
   .logoHeader {
     width: 150px; }
   .logoHeader:hover {
@@ -363,6 +365,8 @@ button.btn.btn-primary:hover {
 
 @media (max-width: 576px) {
   /*TAMANIO CHICO*/
+  .queHacemos {
+    margin: auto 10px auto 10px; }
   .redesLogo {
     width: 30px; }
   .redesLogo:hover {
