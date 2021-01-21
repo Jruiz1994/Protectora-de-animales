@@ -234,7 +234,8 @@ input[type=submit],
   font-weight: bold; }
 
 .salvarVida {
-  font-size: 45px; }
+  font-size: 40px;
+  text-decoration: none; }
 
 .salvarVida:hover {
   color: black !important; }
@@ -301,7 +302,7 @@ button.btn.btn-primary:hover {
   .botonSalvarVida {
     grid-area: botonSalvarVida;
     margin-top: 40px;
-    width: 400px; }
+    width: 350px; }
   /*termina seccion de texto en columnas de pagina de inicio*/
   /*-----------------Empiezan estilos de donaciones-----------------*/
   .donaciones {
