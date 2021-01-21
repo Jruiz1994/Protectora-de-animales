@@ -104,6 +104,9 @@ h2 {
   background-size: cover;
   height: 480px; }
 
+blockquote {
+  margin-top: 20px; }
+
 .adopciones__adopcionesForm {
   padding-left: 100px; }
 
