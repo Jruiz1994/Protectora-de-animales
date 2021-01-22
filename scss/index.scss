@@ -80,12 +80,12 @@ h1 {
 
 h2 {
     color: #333333;
-    margin: 50px auto auto 80px;
+    margin: 50px auto;
     font-weight: bolder;
     font-size: 40px;
     animation-duration: 2s;
     animation-name: aparecer;
-
+    text-align: center;
 }
 
 @keyframes aparecer {
@@ -131,9 +131,7 @@ li {
     text-align: justify;
 }
 
-h2 {
-    text-align: center;
-}
+
 
 .encabezadoQueHacemos1,
 .encabezadoQueHacemos2,
@@ -556,6 +554,50 @@ button.btn.btn-primary:hover {
     .botonSalvarVida {
         margin: 30px;
     }
+
+    .card, .col{
+        @include sizes(200px)
+    }
+
+    .contenedorEquipo{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 440px 440px 440px;
+        grid-template-areas:
+            "persona1 persona2 persona3"
+            "persona4 persona5 persona6"
+            "persona7 persona8 persona9";
+        justify-items: start;
+        align-items: flex-start;
+    }
+
+    .persona1{
+        grid-area: persona1;
+    }
+    .persona2{
+        grid-area: persona2;
+    }
+    .persona3{
+        grid-area: persona3;
+    }
+    .persona4{
+        grid-area: persona4;
+    }
+    .persona5{
+        grid-area: persona5;
+    }
+    .persona6{
+        grid-area: persona6;
+    }
+    .persona7{
+        grid-area: persona7;
+    }
+    .persona8{
+        grid-area: persona8;
+    }
+    .persona9{
+        grid-area: persona9;
+    }
 }
 
 
@@ -756,5 +798,51 @@ button.btn.btn-primary:hover {
 
     .botonSalvarVida {
         margin: 20px;
+    }
+
+    .card, .col{
+        @include sizes(200px)
+    }
+
+    .contenedorEquipo{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 440px 440px 440px 440px 440px;
+        grid-template-areas:
+            "persona1 persona2"
+            "persona3 persona4"
+            "persona5 persona6"
+            "persona7 persona8"
+            "persona9 persona9";
+        justify-items: start;
+        align-items: flex-start;
+    }
+
+    .persona1{
+        grid-area: persona1;
+    }
+    .persona2{
+        grid-area: persona2;
+    }
+    .persona3{
+        grid-area: persona3;
+    }
+    .persona4{
+        grid-area: persona4;
+    }
+    .persona5{
+        grid-area: persona5;
+    }
+    .persona6{
+        grid-area: persona6;
+    }
+    .persona7{
+        grid-area: persona7;
+    }
+    .persona8{
+        grid-area: persona8;
+    }
+    .persona9{
+        grid-area: persona9;
     }
 }
