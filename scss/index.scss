@@ -530,13 +530,14 @@ button.btn.btn-primary:hover {
         grid-template-rows: 200px 300px;
         grid-template-areas:
             "logo menu"
-            "titulo titulo";
+            "titulo menu";
         justify-items: center;
-        align-items: center;
+        align-items: start;
     }
 
     .logoHeader {
         grid-area: logo;
+        margin-top: 20px;
     }
 
     .header__headerMenu {
@@ -545,6 +546,9 @@ button.btn.btn-primary:hover {
 
     .titulo {
         grid-area: titulo;
+        margin: 0 auto;
+        font-size: 50px;
+        padding-left: 10px;
     }
 
     .gridFooter {

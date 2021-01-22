@@ -362,15 +362,19 @@ button.btn.btn-primary:hover {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 200px 300px;
-    grid-template-areas: "logo menu" "titulo titulo";
+    grid-template-areas: "logo menu" "titulo menu";
     justify-items: center;
-    align-items: center; }
+    align-items: start; }
   .logoHeader {
-    grid-area: logo; }
+    grid-area: logo;
+    margin-top: 20px; }
   .header__headerMenu {
     grid-area: menu; }
   .titulo {
-    grid-area: titulo; }
+    grid-area: titulo;
+    margin: 0 auto;
+    font-size: 50px;
+    padding-left: 10px; }
   .gridFooter {
     grid-column-gap: 15px; }
   .botonSalvarVida {
