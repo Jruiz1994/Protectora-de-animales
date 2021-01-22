@@ -16,11 +16,24 @@ header {
   height: 500px; }
 
 .headerMenu {
-  display: flex;
-  flex-direction: row;
-  align-content: space-between;
-  flex-wrap: wrap;
-  justify-content: space-around; }
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 250px 250px;
+  grid-column-gap: 10px;
+  grid-template-areas: "logoHeader menu menu" "titulo titulo titulo";
+  justify-items: center;
+  align-content: end; }
+
+.logoHeader {
+  grid-area: logoHeader;
+  margin-top: 30px; }
+
+.navbar {
+  grid-area: menu; }
+
+.titulo {
+  grid-area: titulo;
+  justify-self: start; }
 
 .bg-light {
   background-color: transparent !important; }
@@ -351,7 +364,7 @@ button.btn.btn-primary:hover {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 200px 300px;
-    grid-template-areas: "logo menu" "titulo menu";
+    grid-template-areas: "logo menu" "titulo titulo";
     justify-items: center;
     align-items: center; }
   .logoHeader {
@@ -457,8 +470,10 @@ button.btn.btn-primary:hover {
     grid-area: logoHeader; }
   .titulo {
     grid-area: titulo; }
-  .header__menuMobile {
+  .navbar {
     grid-area: menuMobile; }
+  .navbar-light .navbar-toggler {
+    background-color: #FF7000; }
   #dropdownMenu2 {
     margin: 20px;
     color: #FF7000; }
