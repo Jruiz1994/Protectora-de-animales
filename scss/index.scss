@@ -149,7 +149,7 @@ h2 {
     @include heights(480px);
 }
 
-blockquote{
+blockquote {
     margin-top: 20px;
 }
 
@@ -479,7 +479,7 @@ button.btn.btn-primary:hover {
 
     /*TAMANIO MEDIANO*/
 
-    .queHacemos{
+    .queHacemos {
         margin: auto 15px auto 15px;
     }
 
@@ -534,6 +534,10 @@ button.btn.btn-primary:hover {
     .gridFooter {
         grid-column-gap: 15px;
     }
+
+    .botonSalvarVida {
+        margin: 30px;
+    }
 }
 
 
@@ -543,8 +547,58 @@ button.btn.btn-primary:hover {
 
     /*TAMANIO CHICO*/
 
-    .queHacemos{
+    a.nav-link{
+        padding-top: 2px;
+        padding-bottom: 2px;
+        font-size: 15px !important;
+    }
+
+    .queHacemos {
         margin: auto 10px auto 10px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 70px 200px 350px 70px 200px 350px 70px 200px 350px 30px;
+        grid-template-areas:
+            "titulo1"
+            "texto1"
+            "foto1"
+            "titulo2"
+            "texto2"
+            "foto2"
+            "titulo3"
+            "texto3"
+            "foto3"
+            "botonSalvarVida";
+        justify-items: center;
+        align-content: center;
+    }
+
+    .encabezadoQueHacemos1{
+        grid-area: titulo1;
+    }
+    .encabezadoQueHacemos2{
+        grid-area: titulo2;
+    }
+    .encabezadoQueHacemos3{
+        grid-area: titulo3;
+    }
+    .parrafoQueHacemos1{
+        grid-area: texto1;
+    }
+    .parrafoQueHacemos2{
+        grid-area: texto2;
+    }
+    .parrafoQueHacemos3{
+        grid-area: texto3;
+    }
+    .imagenQueHacemos1{
+        grid-area: foto1;
+    }
+    .imagenQueHacemos2{
+        grid-area: foto2;
+    }
+    .imagenQueHacemos3{
+        grid-area: foto3;
     }
 
     .redesLogo {
@@ -555,21 +609,55 @@ button.btn.btn-primary:hover {
         @include sizes(30px);
     }
 
-    .social {
-        @include sizes(100%);
-    }
-
-    .redes {
-        margin: auto 2px;
-    }
-
     footer {
-        margin: 30px auto 10px auto;
-        @include heights(450px);
+        margin: auto auto 10px auto;
+        @include heights(400px);
+    }
+
+    .gridFooter {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 150px 90px 130px;
+        grid-column-gap: 10px;
+        grid-template-areas:
+            "logoRefugio formulario "
+            "suscripcion formulario "
+            "links redes";
+        justify-items: center;
+        align-content: end;
     }
 
     .footer__logoRefugio {
-        @include sizes(150px);
+        grid-area: logoRefugio;
+        @include sizes(130px);
+        padding-top: 0;
+    }
+
+    .social {
+        grid-area: redes;
+        align-self: end;
+        @include sizes(100%);
+    }
+
+    .formContacto {
+        grid-area: formulario;
+    }
+
+    .formSuscripcion {
+        grid-area: suscripcion;
+        align-self: start;
+    }
+
+    .informacionFooter {
+        grid-area: links;
+    }
+
+    .informacionFooter__titulo {
+        font-size: 18px;
+    }
+
+    .informacionFooter__link {
+        font-size: 15px;
     }
 
     ul li a {
@@ -642,5 +730,9 @@ button.btn.btn-primary:hover {
     .ol__li {
         padding-left: 15px;
         padding-right: 15px;
+    }
+
+    .botonSalvarVida {
+        margin: 20px;
     }
 }
