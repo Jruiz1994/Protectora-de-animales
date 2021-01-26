@@ -105,7 +105,9 @@ li a {
   width: 330px; }
 
 .contenedorEquipo {
-  margin: 20px auto; }
+  margin: 10px auto;
+  display: flex;
+  justify-content: space-around; }
 
 /*--------------------Empiezan estilos de adopciones-------------------*/
 .adopciones {
@@ -375,6 +377,7 @@ button.btn.btn-primary:hover {
   .card, .col {
     width: 200px; }
   .contenedorEquipo {
+    margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 440px 440px 440px;
@@ -521,6 +524,7 @@ button.btn.btn-primary:hover {
   .card, .col {
     width: 200px; }
   .contenedorEquipo {
+    margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 440px 440px 440px 440px 440px;
