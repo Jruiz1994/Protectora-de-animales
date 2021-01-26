@@ -236,16 +236,16 @@ a.card-link {
 
 /*-----------------INICIO FOOTER-----------------*/
 
-$redes: (facebook: #3F2AC2,
-instagram: #F8208B,
-twitter: #44D3F7);
+// $redes: (facebook: #3F2AC2,
+// instagram: #F8208B,
+// twitter: #44D3F7);
 
-@each $red,
-$color in $redes {
-    .#{$red}:hover {
-        background-color: $color;
-    }
-}
+// @each $red,
+// $color in $redes {
+//     .#{$red}:hover {
+//         background-color: $color;
+//     }
+// }
 
 
 footer {
@@ -338,6 +338,7 @@ input[type=submit],
     font-size: 18px;
     color: black;
     font-weight: bold;
+    text-decoration: none;
 }
 
 .salvarVida {
@@ -357,6 +358,7 @@ input[type=submit],
 
 .informacionFooter__link:hover {
     color: $colorNaranja;
+    text-decoration: underline;
 }
 
 button.btn.btn-primary {

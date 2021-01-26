@@ -165,15 +165,6 @@ a.card-link {
   list-style-position: inside; }
 
 /*-----------------INICIO FOOTER-----------------*/
-.facebook:hover {
-  background-color: #3F2AC2; }
-
-.instagram:hover {
-  background-color: #F8208B; }
-
-.twitter:hover {
-  background-color: #44D3F7; }
-
 footer {
   background-image: radial-gradient(#D6D4D4, #7C7878);
   height: 350px; }
@@ -243,7 +234,8 @@ input[type=submit],
 .informacionFooter__link, .salvarVida {
   font-size: 18px;
   color: black;
-  font-weight: bold; }
+  font-weight: bold;
+  text-decoration: none; }
 
 .salvarVida {
   font-size: 40px;
@@ -256,7 +248,8 @@ input[type=submit],
   margin: 0 auto; }
 
 .informacionFooter__link:hover, .salvarVida:hover {
-  color: #FF7000; }
+  color: #FF7000;
+  text-decoration: underline; }
 
 button.btn.btn-primary {
   background-color: #F49D59;
