@@ -101,7 +101,7 @@ li a {
 .nombreEquipo {
   font-weight: bold; }
 
-.col {
+.colEquipo {
   width: 330px; }
 
 .contenedorEquipo {
@@ -158,7 +158,7 @@ select.form-select {
 
 /*--------------------Terminan estilos de adopciones-------------------*/
 #accordion {
-  margin-top: 50px; }
+  margin: 70px auto; }
 
 a.card-link {
   color: #FF7000;
@@ -366,6 +366,8 @@ button.btn.btn-primary:hover {
     margin-top: 20px; }
   .header__headerMenu {
     grid-area: menu; }
+  .container-fluid {
+    background-color: #FF7000; }
   .titulo {
     grid-area: titulo;
     margin: 0 auto;
@@ -375,16 +377,19 @@ button.btn.btn-primary:hover {
     grid-column-gap: 15px; }
   .botonSalvarVida {
     margin: 30px; }
-  .card, .col {
-    width: 200px; }
+  .cardEquipo,
+  .colEquipo {
+    width: 230px; }
   .contenedorEquipo {
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 440px 440px 440px;
     grid-template-areas: "persona1 persona2 persona3" "persona4 persona5 persona6" "persona7 persona8 persona9";
-    justify-items: start;
-    align-items: flex-start; }
+    justify-items: center;
+    align-items: center; }
+  .fotoEquipo {
+    width: 210px; }
   .persona1 {
     grid-area: persona1; }
   .persona2 {
@@ -500,6 +505,8 @@ button.btn.btn-primary:hover {
     grid-template-areas: "logoHeader titulo menuMobile";
     justify-items: center;
     align-items: flex-start; }
+  .container-fluid {
+    background-color: #FF7000; }
   .logoHeaderAnimacion {
     grid-area: logoHeader; }
   .titulo {
@@ -522,7 +529,10 @@ button.btn.btn-primary:hover {
     padding-right: 15px; }
   .botonSalvarVida {
     margin: 20px; }
-  .card, .col {
+  .cardEquipo,
+  .colEquipo {
+    width: 230px; }
+  .fotoEquipo {
     width: 200px; }
   .contenedorEquipo {
     margin: 0 auto;
@@ -530,8 +540,8 @@ button.btn.btn-primary:hover {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 440px 440px 440px 440px 440px;
     grid-template-areas: "persona1 persona2" "persona3 persona4" "persona5 persona6" "persona7 persona8" "persona9 persona9";
-    justify-items: start;
-    align-items: flex-start; }
+    justify-items: center;
+    align-items: center; }
   .persona1 {
     grid-area: persona1; }
   .persona2 {

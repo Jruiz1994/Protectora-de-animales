@@ -42,16 +42,16 @@ header {
     align-content: end;
 }
 
-.logoHeader{
+.logoHeader {
     grid-area: logoHeader;
     margin-top: 30px;
 }
 
-.navbar{
+.navbar {
     grid-area: menu;
 }
 
-.titulo{
+.titulo {
     grid-area: titulo;
     justify-self: start;
 }
@@ -147,7 +147,7 @@ li {
     font-weight: bold;
 }
 
-.col {
+.colEquipo {
     @include sizes(330px);
 }
 
@@ -225,7 +225,7 @@ select.form-select {
 
 /*--------------------Terminan estilos de adopciones-------------------*/
 #accordion {
-    margin-top: 50px;
+    margin: 70px auto;
 }
 
 a.card-link {
@@ -384,9 +384,10 @@ button.btn.btn-primary:hover {
 
     /*TAMANIO GRANDE*/
 
-    .contenedorAdopciones{
+    .contenedorAdopciones {
         display: none;
     }
+
     h1 {
         margin-top: 20px;
     }
@@ -551,6 +552,10 @@ button.btn.btn-primary:hover {
         grid-area: menu;
     }
 
+    .container-fluid{
+        background-color: #FF7000;
+    }
+
     .titulo {
         grid-area: titulo;
         margin: 0 auto;
@@ -566,11 +571,17 @@ button.btn.btn-primary:hover {
         margin: 30px;
     }
 
-    .card, .col{
-        @include sizes(200px)
+    .cardEquipo,
+    .colEquipo {
+        @include sizes(230px);
     }
 
-    .contenedorEquipo{
+    // .contenedorEquipo {
+    //     margin: 10px auto;
+    //     display: flex;
+    //     justify-content: space-around;
+
+    .contenedorEquipo {
         margin: 0 auto;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -579,44 +590,57 @@ button.btn.btn-primary:hover {
             "persona1 persona2 persona3"
             "persona4 persona5 persona6"
             "persona7 persona8 persona9";
-        justify-items: start;
-        align-items: flex-start;
+        justify-items: center;
+        align-items: center;
     }
 
-    .persona1{
+.fotoEquipo{
+        @include sizes(210px);
+    }
+
+
+    .persona1 {
         grid-area: persona1;
     }
-    .persona2{
+
+    .persona2 {
         grid-area: persona2;
     }
-    .persona3{
+
+    .persona3 {
         grid-area: persona3;
     }
-    .persona4{
+
+    .persona4 {
         grid-area: persona4;
     }
-    .persona5{
+
+    .persona5 {
         grid-area: persona5;
     }
-    .persona6{
+
+    .persona6 {
         grid-area: persona6;
     }
-    .persona7{
+
+    .persona7 {
         grid-area: persona7;
     }
-    .persona8{
+
+    .persona8 {
         grid-area: persona8;
     }
-    .persona9{
+
+    .persona9 {
         grid-area: persona9;
     }
 
 
-    .adopciones__adopcionesForm{
+    .adopciones__adopcionesForm {
         padding: 0px 15px;
     }
 
-    .carousel{
+    .carousel {
         display: none;
     }
 }
@@ -628,15 +652,15 @@ button.btn.btn-primary:hover {
 
     /*TAMANIO CHICO*/
 
-     .adopciones__adopcionesForm{
+    .adopciones__adopcionesForm {
         padding: 0px 15px;
     }
 
-    .carousel{
+    .carousel {
         display: none;
     }
 
-    a.nav-link{
+    a.nav-link {
         padding-top: 2px;
         padding-bottom: 2px;
         font-size: 15px !important;
@@ -662,31 +686,39 @@ button.btn.btn-primary:hover {
         align-content: center;
     }
 
-    .encabezadoQueHacemos1{
+    .encabezadoQueHacemos1 {
         grid-area: titulo1;
     }
-    .encabezadoQueHacemos2{
+
+    .encabezadoQueHacemos2 {
         grid-area: titulo2;
     }
-    .encabezadoQueHacemos3{
+
+    .encabezadoQueHacemos3 {
         grid-area: titulo3;
     }
-    .parrafoQueHacemos1{
+
+    .parrafoQueHacemos1 {
         grid-area: texto1;
     }
-    .parrafoQueHacemos2{
+
+    .parrafoQueHacemos2 {
         grid-area: texto2;
     }
-    .parrafoQueHacemos3{
+
+    .parrafoQueHacemos3 {
         grid-area: texto3;
     }
-    .imagenQueHacemos1{
+
+    .imagenQueHacemos1 {
         grid-area: foto1;
     }
-    .imagenQueHacemos2{
+
+    .imagenQueHacemos2 {
         grid-area: foto2;
     }
-    .imagenQueHacemos3{
+
+    .imagenQueHacemos3 {
         grid-area: foto3;
     }
 
@@ -787,6 +819,10 @@ button.btn.btn-primary:hover {
         align-items: flex-start;
     }
 
+    .container-fluid{
+        background-color: #FF7000;
+    }
+
     .logoHeaderAnimacion {
         grid-area: logoHeader;
     }
@@ -829,11 +865,16 @@ button.btn.btn-primary:hover {
         margin: 20px;
     }
 
-    .card, .col{
-        @include sizes(200px)
+    .cardEquipo,
+    .colEquipo {
+        @include sizes(230px);
     }
 
-    .contenedorEquipo{
+    .fotoEquipo{
+        @include sizes(200px);
+    }
+
+    .contenedorEquipo {
         margin: 0 auto;
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -844,35 +885,43 @@ button.btn.btn-primary:hover {
             "persona5 persona6"
             "persona7 persona8"
             "persona9 persona9";
-        justify-items: start;
-        align-items: flex-start;
+        justify-items: center;
+        align-items: center;
     }
 
-    .persona1{
+    .persona1 {
         grid-area: persona1;
     }
-    .persona2{
+
+    .persona2 {
         grid-area: persona2;
     }
-    .persona3{
+
+    .persona3 {
         grid-area: persona3;
     }
-    .persona4{
+
+    .persona4 {
         grid-area: persona4;
     }
-    .persona5{
+
+    .persona5 {
         grid-area: persona5;
     }
-    .persona6{
+
+    .persona6 {
         grid-area: persona6;
     }
-    .persona7{
+
+    .persona7 {
         grid-area: persona7;
     }
-    .persona8{
+
+    .persona8 {
         grid-area: persona8;
     }
-    .persona9{
+
+    .persona9 {
         grid-area: persona9;
     }
 }
