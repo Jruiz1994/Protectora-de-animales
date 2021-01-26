@@ -166,7 +166,8 @@ li {
 }
 
 blockquote {
-    margin-top: 20px;
+    margin: 20px auto;
+    @include sizes(80%);
 }
 
 .adopciones__adopcionesForm {
