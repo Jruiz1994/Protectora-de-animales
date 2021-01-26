@@ -166,8 +166,8 @@ li {
 }
 
 blockquote {
-    margin: 20px auto;
-    @include sizes(80%);
+     margin:20px auto;
+    @include sizes(90%);
 }
 
 .adopciones__adopcionesForm {
@@ -647,6 +647,11 @@ button.btn.btn-primary:hover {
     .carousel {
         display: none;
     }
+
+    .contenedorAdopciones{
+        display: flex;
+        justify-content: space-around;
+    }
 }
 
 
@@ -655,6 +660,11 @@ button.btn.btn-primary:hover {
 @media (max-width: 576px) {
 
     /*TAMANIO CHICO*/
+
+    .contenedorAdopciones{
+        display: flex;
+        justify-content: space-around;
+    }
 
     .adopciones__adopcionesForm {
         padding: 0px 15px;

@@ -117,7 +117,7 @@ li a {
 
 blockquote {
   margin: 20px auto;
-  width: 80%; }
+  width: 90%; }
 
 .adopciones__adopcionesForm {
   padding-left: 100px; }
@@ -413,10 +413,16 @@ button.btn.btn-primary:hover {
   .donaciones__formDonaciones {
     padding: 0px 15px; }
   .carousel {
-    display: none; } }
+    display: none; }
+  .contenedorAdopciones {
+    display: flex;
+    justify-content: space-around; } }
 
 @media (max-width: 576px) {
   /*TAMANIO CHICO*/
+  .contenedorAdopciones {
+    display: flex;
+    justify-content: space-around; }
   .adopciones__adopcionesForm {
     padding: 0px 15px; }
   .donaciones__formDonaciones {
