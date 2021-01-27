@@ -727,6 +727,7 @@ button.btn.btn-primary:hover {
 
     .contenedorAdopciones {
         @include sizes(100%);
+        margin: 0 auto;
     }
 
     .adopciones__adopcionesForm {
@@ -818,13 +819,13 @@ button.btn.btn-primary:hover {
 
     footer {
         margin: auto auto 10px auto;
-        @include heights(400px);
+        @include heights(430px);
     }
 
     .gridFooter {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 150px 90px 130px;
+        grid-template-rows: 150px 90px 150px;
         grid-column-gap: 10px;
         grid-template-areas:
             "logoRefugio formulario "

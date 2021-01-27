@@ -450,7 +450,8 @@ button.btn.btn-primary:hover {
 @media (max-width: 576px) {
   /*TAMANIO CHICO*/
   .contenedorAdopciones {
-    width: 100%; }
+    width: 100%;
+    margin: 0 auto; }
   .adopciones__adopcionesForm {
     padding: 0px 15px; }
   .donaciones__formDonaciones {
@@ -496,11 +497,11 @@ button.btn.btn-primary:hover {
     width: 30px; }
   footer {
     margin: auto auto 10px auto;
-    height: 400px; }
+    height: 430px; }
   .gridFooter {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 150px 90px 130px;
+    grid-template-rows: 150px 90px 150px;
     grid-column-gap: 10px;
     grid-template-areas: "logoRefugio formulario " "suscripcion formulario " "links redes";
     justify-items: center;
