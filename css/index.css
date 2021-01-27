@@ -123,8 +123,7 @@ blockquote {
   padding-left: 100px; }
 
 .adoption {
-  padding-top: 150px;
-  margin-left: 30px; }
+  padding-top: 150px; }
 
 .carousel-caption-dark h3,
 .carousel-caption-dark p {
@@ -341,6 +340,32 @@ button.btn.btn-primary:hover {
   /*TAMANIO MEDIANO*/
   .queHacemos {
     margin: auto 15px auto 15px; }
+  .queHacemos {
+    margin: auto 10px auto 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 70px 200px 350px 70px 200px 350px 70px 200px 350px 30px;
+    grid-template-areas: "titulo1" "texto1" "foto1" "titulo2" "texto2" "foto2" "titulo3" "texto3" "foto3" "botonSalvarVida";
+    justify-items: center;
+    align-content: center; }
+  .encabezadoQueHacemos1 {
+    grid-area: titulo1; }
+  .encabezadoQueHacemos2 {
+    grid-area: titulo2; }
+  .encabezadoQueHacemos3 {
+    grid-area: titulo3; }
+  .parrafoQueHacemos1 {
+    grid-area: texto1; }
+  .parrafoQueHacemos2 {
+    grid-area: texto2; }
+  .parrafoQueHacemos3 {
+    grid-area: texto3; }
+  .imagenQueHacemos1 {
+    grid-area: foto1; }
+  .imagenQueHacemos2 {
+    grid-area: foto2; }
+  .imagenQueHacemos3 {
+    grid-area: foto3; }
   .logoHeader {
     width: 150px; }
   .logoHeader:hover {
@@ -366,7 +391,7 @@ button.btn.btn-primary:hover {
     margin-top: 20px; }
   .header__headerMenu {
     grid-area: menu; }
-  .container-fluid {
+  .navbar-nav {
     background-color: #FF7000; }
   .titulo {
     grid-area: titulo;
@@ -515,7 +540,7 @@ button.btn.btn-primary:hover {
     grid-template-areas: "logoHeader titulo menuMobile";
     justify-items: center;
     align-items: flex-start; }
-  .container-fluid {
+  .navbar-nav {
     background-color: #FF7000; }
   .logoHeaderAnimacion {
     grid-area: logoHeader; }
