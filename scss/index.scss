@@ -166,7 +166,7 @@ li {
 }
 
 blockquote {
-     margin:20px auto;
+    margin: 20px auto;
     @include sizes(90%);
 }
 
@@ -608,7 +608,7 @@ button.btn.btn-primary:hover {
         grid-area: menu;
     }
 
-    .navbar-nav{
+    .navbar-nav {
         background-color: #FF7000;
     }
 
@@ -650,7 +650,7 @@ button.btn.btn-primary:hover {
         align-items: center;
     }
 
-.fotoEquipo{
+    .fotoEquipo {
         @include sizes(210px);
     }
 
@@ -704,9 +704,17 @@ button.btn.btn-primary:hover {
         display: none;
     }
 
-    .contenedorAdopciones{
-        display: flex;
-        justify-content: space-around;
+    .contenedorAdopciones {
+        @include sizes(100%);
+    }
+
+    .contenedorAdopciones {
+        @include sizes(100%);
+    }
+
+    .navbar-nav {
+        position: absolute;
+        right: 0;
     }
 }
 
@@ -717,9 +725,8 @@ button.btn.btn-primary:hover {
 
     /*TAMANIO CHICO*/
 
-    .contenedorAdopciones{
-        display: flex;
-        justify-content: space-around;
+    .contenedorAdopciones {
+        @include sizes(100%);
     }
 
     .adopciones__adopcionesForm {
@@ -738,6 +745,11 @@ button.btn.btn-primary:hover {
         padding-top: 2px;
         padding-bottom: 2px;
         font-size: 15px !important;
+    }
+
+    .navbar-nav {
+        position: absolute;
+        right: 0;
     }
 
     .queHacemos {
@@ -893,7 +905,7 @@ button.btn.btn-primary:hover {
         align-items: flex-start;
     }
 
-    .navbar-nav{
+    .navbar-nav {
         background-color: #FF7000;
     }
 
@@ -905,7 +917,7 @@ button.btn.btn-primary:hover {
         grid-area: titulo;
     }
 
-    .navbar {
+    #menuMobile {
         grid-area: menuMobile;
     }
 
@@ -944,7 +956,7 @@ button.btn.btn-primary:hover {
         @include sizes(230px);
     }
 
-    .fotoEquipo{
+    .fotoEquipo {
         @include sizes(200px);
     }
 

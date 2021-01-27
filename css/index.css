@@ -440,14 +440,17 @@ button.btn.btn-primary:hover {
   .carousel {
     display: none; }
   .contenedorAdopciones {
-    display: flex;
-    justify-content: space-around; } }
+    width: 100%; }
+  .contenedorAdopciones {
+    width: 100%; }
+  .navbar-nav {
+    position: absolute;
+    right: 0; } }
 
 @media (max-width: 576px) {
   /*TAMANIO CHICO*/
   .contenedorAdopciones {
-    display: flex;
-    justify-content: space-around; }
+    width: 100%; }
   .adopciones__adopcionesForm {
     padding: 0px 15px; }
   .donaciones__formDonaciones {
@@ -458,6 +461,9 @@ button.btn.btn-primary:hover {
     padding-top: 2px;
     padding-bottom: 2px;
     font-size: 15px !important; }
+  .navbar-nav {
+    position: absolute;
+    right: 0; }
   .queHacemos {
     margin: auto 10px auto 10px;
     display: grid;
@@ -546,7 +552,7 @@ button.btn.btn-primary:hover {
     grid-area: logoHeader; }
   .titulo {
     grid-area: titulo; }
-  .navbar {
+  #menuMobile {
     grid-area: menuMobile; }
   .navbar-light .navbar-toggler {
     background-color: #FF7000; }
