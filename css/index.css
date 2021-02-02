@@ -488,7 +488,7 @@ button.btn.btn-primary:hover {
     font-size: 20px; }
   .logoHeader {
     width: 110px;
-    margin: 20px; }
+    margin: 20px 0 0 20px; }
   .logoHeader:hover {
     width: 110px; }
   div.logoHeaderAnimacion {
@@ -496,7 +496,7 @@ button.btn.btn-primary:hover {
     height: 130px; }
   h1 {
     font-size: 25px;
-    margin: 20px; }
+    margin: 20px 10px 20px 10px; }
   header {
     height: 200px; }
   .headerMenu {
@@ -512,7 +512,7 @@ button.btn.btn-primary:hover {
     grid-area: logoHeader; }
   .titulo {
     grid-area: titulo; }
-  #menuMobile {
+  .navbar {
     grid-area: menuMobile; }
   .navbar-light .navbar-toggler {
     background-color: #FF7000; }

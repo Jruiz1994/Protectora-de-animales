@@ -793,7 +793,7 @@ button.btn.btn-primary:hover {
 
     .logoHeader {
         @include sizes(110px);
-        margin: 20px;
+        margin: 20px 0 0 20px;
     }
 
     .logoHeader:hover {
@@ -807,7 +807,7 @@ button.btn.btn-primary:hover {
 
     h1 {
         font-size: 25px;
-        margin: 20px;
+        margin: 20px 10px 20px 10px;
     }
 
     header {
@@ -836,7 +836,7 @@ button.btn.btn-primary:hover {
         grid-area: titulo;
     }
 
-    #menuMobile {
+    .navbar {
         grid-area: menuMobile;
     }
 
