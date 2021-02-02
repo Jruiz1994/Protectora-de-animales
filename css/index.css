@@ -85,7 +85,7 @@ li a {
   list-style-type: disc; }
 
 .texto {
-  padding: 30px 60px 30px 60px;
+  padding: 20px;
   text-align: justify; }
 
 /*--------------EMPIEZAN ESTILOS DEL INDEX----------------*/
@@ -131,7 +131,7 @@ li a {
 
 blockquote {
   margin: 20px auto;
-  width: 90%; }
+  width: 95%; }
 
 .adopciones__adopcionesForm {
   padding-left: 100px; }
@@ -348,7 +348,7 @@ button.btn.btn-primary:hover {
   .queHacemos {
     margin: auto 15px auto 15px; }
   .queHacemos {
-    margin: auto 10px auto 10px;
+    margin: auto 20px;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 70px 200px 350px 70px 200px 350px 70px 200px 350px 30px;
@@ -392,7 +392,7 @@ button.btn.btn-primary:hover {
     font-size: 50px; }
   .headerMenu {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 2fr 1fr;
     grid-template-rows: 200px 300px;
     grid-template-areas: "logo menu" "titulo menu";
     justify-items: center;
@@ -408,9 +408,9 @@ button.btn.btn-primary:hover {
     right: 0; }
   .titulo {
     grid-area: titulo;
-    margin: 0 auto;
     font-size: 50px;
-    padding-left: 10px; }
+    text-align: center;
+    margin: 20px auto; }
   /*---------------------------TERMINAN ESTILOS DE HEADER--------------------------------------*/
   /*---------------------------EMPIEZAN ESTILOS DE FOOTER--------------------------------------*/
   .gridFooter {
@@ -452,13 +452,12 @@ button.btn.btn-primary:hover {
   /*---------------------------EMPIEZAN ESTILOS DE ADOPCIONES--------------------------------------*/
   .adopciones__adopcionesForm {
     padding: 0px 15px; }
-  .donaciones__formDonaciones {
-    padding: 0px 15px; }
-  .carousel {
-    display: none; }
   .contenedorAdopciones {
     width: 100%;
     margin-bottom: 20px; }
+  /*---------------------------ESTILO DE DONACIONES--------------------------------------*/
+  .donaciones__formDonaciones {
+    padding: 0px 15px; }
   /*---------------------------TERMINAN ESTILOS DE ADOPCIONES--------------------------------------*/ }
 
 @media (max-width: 576px) {
