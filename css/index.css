@@ -17,7 +17,7 @@ header {
 
 .headerMenu {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 2fr;
   grid-template-rows: 250px 250px;
   grid-column-gap: 10px;
   grid-template-areas: "logoHeader menu menu" "titulo titulo titulo";
@@ -44,12 +44,12 @@ a.nav-link {
 a.nav-link:hover {
   color: #FF7000 !important; }
 
-/*--------------TERMINAN ESTILOS DEL HEADER----------------*/
 h1 {
   color: #FFFFFF;
   font-size: 60PX;
   margin-left: 80px; }
 
+/*--------------TERMINAN ESTILOS DEL HEADER----------------*/
 h2 {
   color: #333333;
   margin: 50px auto;
@@ -88,6 +88,7 @@ li a {
   padding: 30px 60px 30px 60px;
   text-align: justify; }
 
+/*--------------EMPIEZAN ESTILOS DEL INDEX----------------*/
 .encabezadoQueHacemos1,
 .encabezadoQueHacemos2,
 .encabezadoQueHacemos3 {
@@ -98,6 +99,18 @@ li a {
 .imagenQueHacemos3 {
   width: 300px; }
 
+.salvarVida {
+  font-size: 40px;
+  text-decoration: none; }
+
+.salvarVida:hover {
+  color: black !important; }
+
+.botonSalvarVida {
+  margin: 0 auto; }
+
+/*--------------TERMINAN ESTILOS DEL INDEX----------------*/
+/*--------------EMPIEZAN ESTILOS DE EQUIPO----------------*/
 .nombreEquipo {
   font-weight: bold; }
 
@@ -109,7 +122,8 @@ li a {
   display: flex;
   justify-content: space-around; }
 
-/*--------------------Empiezan estilos de adopciones-------------------*/
+/*--------------TERMINAN ESTILOS DE EQUIPO----------------*/
+/*--------------------EMPIEZAN ESTILOS DE ADOPCIONES-------------------*/
 .adopciones {
   background-image: url(../imagenes/sliderAdopciones/perroAmor.png);
   background-size: cover;
@@ -156,6 +170,7 @@ select.form-select {
   margin-top: 15px; }
 
 /*--------------------Terminan estilos de adopciones-------------------*/
+/*--------------EMPIEZAN ESTILOS DE FAQS----------------*/
 #accordion {
   margin: 70px auto; }
 
@@ -166,7 +181,8 @@ a.card-link {
 #faqs {
   list-style-position: inside; }
 
-/*-----------------INICIO FOOTER-----------------*/
+/*--------------TERMINAN ESTILOS DE FAQS----------------*/
+/*---------------------INICIO FOOTER---------------------*/
 footer {
   background-image: radial-gradient(#D6D4D4, #7C7878);
   height: 350px; }
@@ -239,16 +255,6 @@ input[type=submit],
   font-weight: bold;
   text-decoration: none; }
 
-.salvarVida {
-  font-size: 40px;
-  text-decoration: none; }
-
-.salvarVida:hover {
-  color: black !important; }
-
-.botonSalvarVida {
-  margin: 0 auto; }
-
 .informacionFooter__link:hover, .salvarVida:hover {
   color: #FF7000;
   text-decoration: underline; }
@@ -263,8 +269,8 @@ button.btn.btn-primary:hover {
 .form-check-input:checked {
   background-color: #FF7000; }
 
-/*--------------FIN-FOOTER----------------*/
-@media (min-width: 993px) {
+/*--------------TERMINAN ESTILOS DE FOOTER----------------*/
+@media (min-width: 992px) {
   /*TAMANIO GRANDE*/
   .contenedorAdopciones {
     display: none; }
@@ -338,6 +344,7 @@ button.btn.btn-primary:hover {
 
 @media (max-width: 992px) and (min-width: 577px) {
   /*TAMANIO MEDIANO*/
+  /*---------------------------EMPIEZAN ESTILOS DE INDEX--------------------------------------*/
   .queHacemos {
     margin: auto 15px auto 15px; }
   .queHacemos {
@@ -366,6 +373,10 @@ button.btn.btn-primary:hover {
     grid-area: foto2; }
   .imagenQueHacemos3 {
     grid-area: foto3; }
+  .botonSalvarVida {
+    margin: 30px; }
+  /*---------------------------TERMINAN ESTILOS DE INDEX--------------------------------------*/
+  /*---------------------------EMPIEZAN ESTILOS DE HEADER--------------------------------------*/
   .logoHeader {
     width: 150px; }
   .logoHeader:hover {
@@ -381,7 +392,7 @@ button.btn.btn-primary:hover {
     font-size: 50px; }
   .headerMenu {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
     grid-template-rows: 200px 300px;
     grid-template-areas: "logo menu" "titulo menu";
     justify-items: center;
@@ -389,19 +400,23 @@ button.btn.btn-primary:hover {
   .logoHeader {
     grid-area: logo;
     margin-top: 20px; }
-  .header__headerMenu {
+  .container-fluid {
     grid-area: menu; }
   .navbar-nav {
-    background-color: #FF7000; }
+    background-color: #FF7000;
+    position: absolute;
+    right: 0; }
   .titulo {
     grid-area: titulo;
     margin: 0 auto;
     font-size: 50px;
     padding-left: 10px; }
+  /*---------------------------TERMINAN ESTILOS DE HEADER--------------------------------------*/
+  /*---------------------------EMPIEZAN ESTILOS DE FOOTER--------------------------------------*/
   .gridFooter {
     grid-column-gap: 15px; }
-  .botonSalvarVida {
-    margin: 30px; }
+  /*---------------------------TERMINAN ESTILOS DE FOOTER--------------------------------------*/
+  /*---------------------------EMPIEZAN ESTILOS DE EQUIPO--------------------------------------*/
   .cardEquipo,
   .colEquipo {
     width: 230px; }
@@ -433,6 +448,8 @@ button.btn.btn-primary:hover {
     grid-area: persona8; }
   .persona9 {
     grid-area: persona9; }
+  /*---------------------------TERMINAN ESTILOS DE EQUIPO--------------------------------------*/
+  /*---------------------------EMPIEZAN ESTILOS DE ADOPCIONES--------------------------------------*/
   .adopciones__adopcionesForm {
     padding: 0px 15px; }
   .donaciones__formDonaciones {
@@ -440,24 +457,26 @@ button.btn.btn-primary:hover {
   .carousel {
     display: none; }
   .contenedorAdopciones {
-    width: 100%; }
-  .contenedorAdopciones {
-    width: 100%; }
-  .navbar-nav {
-    position: absolute;
-    right: 0; } }
+    width: 100%;
+    margin-bottom: 20px; }
+  /*---------------------------TERMINAN ESTILOS DE ADOPCIONES--------------------------------------*/ }
 
 @media (max-width: 576px) {
   /*TAMANIO CHICO*/
+  /*---------------------------EMPIEZAN ESTILOS DE ADOPCIONES--------------------------------------*/
   .contenedorAdopciones {
     width: 100%;
-    margin: 0 auto; }
+    margin: 20px auto; }
   .adopciones__adopcionesForm {
     padding: 0px 15px; }
+  /*---------------------------TERMINAN ESTILOS DE ADOPCIONES--------------------------------------*/
+  /*---------------------------EMPIEZAN ESTILOS DE DONACIONES--------------------------------------*/
   .donaciones__formDonaciones {
     padding: 0px 15px; }
   .carousel {
     display: none; }
+  /*---------------------------TERMINAN ESTILOS DE DONACIONES--------------------------------------*/
+  /*---------------------------EMPIEZAN ESTILOS DE HEADER--------------------------------------*/
   a.nav-link {
     padding-top: 2px;
     padding-bottom: 2px;
@@ -465,66 +484,6 @@ button.btn.btn-primary:hover {
   .navbar-nav {
     position: absolute;
     right: 0; }
-  .queHacemos {
-    margin: auto 10px auto 10px;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 70px 200px 350px 70px 200px 350px 70px 200px 350px 30px;
-    grid-template-areas: "titulo1" "texto1" "foto1" "titulo2" "texto2" "foto2" "titulo3" "texto3" "foto3" "botonSalvarVida";
-    justify-items: center;
-    align-content: center; }
-  .encabezadoQueHacemos1 {
-    grid-area: titulo1; }
-  .encabezadoQueHacemos2 {
-    grid-area: titulo2; }
-  .encabezadoQueHacemos3 {
-    grid-area: titulo3; }
-  .parrafoQueHacemos1 {
-    grid-area: texto1; }
-  .parrafoQueHacemos2 {
-    grid-area: texto2; }
-  .parrafoQueHacemos3 {
-    grid-area: texto3; }
-  .imagenQueHacemos1 {
-    grid-area: foto1; }
-  .imagenQueHacemos2 {
-    grid-area: foto2; }
-  .imagenQueHacemos3 {
-    grid-area: foto3; }
-  .redesLogo {
-    width: 30px; }
-  .redesLogo:hover {
-    width: 30px; }
-  footer {
-    margin: auto auto 10px auto;
-    height: 430px; }
-  .gridFooter {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 150px 90px 150px;
-    grid-column-gap: 10px;
-    grid-template-areas: "logoRefugio formulario " "suscripcion formulario " "links redes";
-    justify-items: center;
-    align-content: end; }
-  .footer__logoRefugio {
-    grid-area: logoRefugio;
-    width: 130px;
-    padding-top: 0; }
-  .social {
-    grid-area: redes;
-    align-self: end;
-    width: 100%; }
-  .formContacto {
-    grid-area: formulario; }
-  .formSuscripcion {
-    grid-area: suscripcion;
-    align-self: start; }
-  .informacionFooter {
-    grid-area: links; }
-  .informacionFooter__titulo {
-    font-size: 18px; }
-  .informacionFooter__link, .salvarVida {
-    font-size: 15px; }
   ul li a {
     font-size: 20px; }
   .logoHeader {
@@ -566,18 +525,84 @@ button.btn.btn-primary:hover {
     color: #FF7000; }
   .dropdown-item {
     padding-left: 2px; }
+  /*---------------------------TERMINAN ESTILOS DE HEADER--------------------------------------*/
+  /*---------------------------EMPIEZAN ESTILOS DE INDEX--------------------------------------*/
+  .queHacemos {
+    margin: auto 10px auto 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 70px 200px 350px 70px 200px 350px 70px 200px 350px 30px;
+    grid-template-areas: "titulo1" "texto1" "foto1" "titulo2" "texto2" "foto2" "titulo3" "texto3" "foto3" "botonSalvarVida";
+    justify-items: center;
+    align-content: center; }
+  .encabezadoQueHacemos1 {
+    grid-area: titulo1; }
+  .encabezadoQueHacemos2 {
+    grid-area: titulo2; }
+  .encabezadoQueHacemos3 {
+    grid-area: titulo3; }
+  .parrafoQueHacemos1 {
+    grid-area: texto1; }
+  .parrafoQueHacemos2 {
+    grid-area: texto2; }
+  .parrafoQueHacemos3 {
+    grid-area: texto3; }
+  .imagenQueHacemos1 {
+    grid-area: foto1; }
+  .imagenQueHacemos2 {
+    grid-area: foto2; }
+  .imagenQueHacemos3 {
+    grid-area: foto3; }
+  .botonSalvarVida {
+    margin: 20px; }
+  /*---------------------------TERMINAN ESTILOS DE INDEX--------------------------------------*/
+  /*---------------------------EMPIEZAN ESTILOS DE FOOTER--------------------------------------*/
+  .redesLogo {
+    width: 30px; }
+  .redesLogo:hover {
+    width: 30px; }
+  footer {
+    margin: auto auto 10px auto;
+    height: 430px; }
+  .gridFooter {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 150px 90px 150px;
+    grid-column-gap: 10px;
+    grid-template-areas: "logoRefugio formulario " "suscripcion formulario " "links redes";
+    justify-items: center;
+    align-content: end; }
+  .footer__logoRefugio {
+    grid-area: logoRefugio;
+    width: 130px;
+    padding-top: 0; }
+  .social {
+    grid-area: redes;
+    align-self: end;
+    width: 100%; }
+  .formContacto {
+    grid-area: formulario; }
+  .formSuscripcion {
+    grid-area: suscripcion;
+    align-self: start; }
+  .informacionFooter {
+    grid-area: links; }
+  .informacionFooter__titulo {
+    font-size: 18px; }
+  .informacionFooter__link, .salvarVida {
+    font-size: 15px; }
+  /*---------------------------TERMINAN ESTILOS DE FOOTER--------------------------------------*/
   .ol__li {
     padding-left: 15px;
     padding-right: 15px; }
-  .botonSalvarVida {
-    margin: 20px; }
+  /*---------------------------EMPIEZAN ESTILOS DE EQUIPO--------------------------------------*/
   .cardEquipo,
   .colEquipo {
     width: 230px; }
   .fotoEquipo {
     width: 200px; }
   .contenedorEquipo {
-    margin: 0 auto;
+    margin: 0 20px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 440px 440px 440px 440px 440px;
@@ -601,4 +626,5 @@ button.btn.btn-primary:hover {
   .persona8 {
     grid-area: persona8; }
   .persona9 {
-    grid-area: persona9; } }
+    grid-area: persona9; }
+  /*---------------------------TERMINAN ESTILOS DE EQUIPO--------------------------------------*/ }
